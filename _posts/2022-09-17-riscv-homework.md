@@ -151,7 +151,7 @@ WRITE_SERIAL:
 
 同样启动监控程序，并通过终端连接监控程序，在监控程序中运行以上代码，得到结果：
 
-![Screen Shot 2022-09-15 at 2.08.50 PM](/Users/hannawang/Desktop/Screen Shot 2022-09-15 at 2.08.50 PM.png)
+![Screen Shot 2022-09-15 at 2.08.50 PM](/assets/Screen Shot 2022-09-15 at 2.08.50 PM.png)
 
 成功向终端输出了ASCII 可见字符：!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 
