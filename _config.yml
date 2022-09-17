@@ -29,9 +29,10 @@ url: https://hanna0911.github.io # the base hostname & protocol for your site, e
 github_username:  hanna0911
 
 # Build settings
-theme: minima
+# theme: minima
 # theme: just-the-docs
-# remote-theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs
+search_enabled: true
 plugins:
   - jekyll-feed
 
