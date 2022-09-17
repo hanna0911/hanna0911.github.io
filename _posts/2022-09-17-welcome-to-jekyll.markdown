@@ -1,29 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "首条博客：网站创建成功~"
 date:   2022-09-17 20:54:07 +0800
-categories: jekyll update
+categories: nothing
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+并没有什么内容的博客哈哈，贴一下老师的[作业要求](https://book.ncrnalab.org/teaching/getting-started)吧！
 
-Jekyll requires blog post files to be named according to the following format:
+1. 注册一个GitHub账户，创建一个`repo`(仓库)，写好`README.md`。尝试使用Git(初学者可以用github的[桌面版软件](https://desktop.github.com/)）管理自己的代码并同步GitHub云端和本地文件。
 
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+2. 尝试使用Markdown语言，熟悉其语法, 利用github的github page功能，用markdown写一个自己的网页。
