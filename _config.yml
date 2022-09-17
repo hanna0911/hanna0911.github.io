@@ -29,9 +29,7 @@ url: https://hanna0911.github.io # the base hostname & protocol for your site, e
 github_username:  hanna0911
 
 # Build settings
-markdown: kramdown
-# theme: minima
-remote-theme: benbalter/retlab
+theme: minima
 plugins:
   - jekyll-feed
 
