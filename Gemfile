@@ -38,4 +38,10 @@ gem "webrick", "~> 1.7"
 
 gem "just-the-docs"
 # gem "dendron-jekyll"
-gem "jekyll-theme-chirpy", "~> 3.3", ">= 3.3.0"
+
+# gem "jekyll-theme-chirpy", "~> 3.3", ">= 3.3.0"
+gem "jekyll-theme-chirpy", "~> 5.2", ">= 5.2.1"
+
+group :test do
+  gem "html-proofer", "~> 3.18"
+end
