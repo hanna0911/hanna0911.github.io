@@ -153,7 +153,7 @@ WRITE_SERIAL:
 
 ![Screen Shot 2022-09-15 at 2.08.50 PM](/assets/Screen Shot 2022-09-15 at 2.08.50 PM.png)
 
-成功向终端输出了ASCII 可见字符：!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+成功向终端输出了ASCII 可见字符：!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~
 
 ### 实验4：求第60个Fibonacci数
 
