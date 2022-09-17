@@ -1,9 +1,11 @@
 ---
-layout: post
-title:  "计组实验1：汇编语言与监控程序"
-date:   2022-09-17 22:04:07 +0800
-categories: computer-science
+layout: default
+title: "计组实验1：汇编语言与监控程序"
+parent: My Blogs
+nav_order: 2
 ---
+
+# 计组实验1：汇编语言与监控程序
 
 ## 实验报告
 

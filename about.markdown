@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+nav_order: 1
 ---
 
 用Jekyll的Minima主题创建的网站，更多自定义主题参考官网：[jekyllrb.com](https://jekyllrb.com/)
