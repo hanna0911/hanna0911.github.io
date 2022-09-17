@@ -13,51 +13,51 @@ categories: computer science
 
 1. 启动监控程序
 
-   ![Screen Shot 2022-09-14 at 2.07.46 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.07.46 PM.png)
+   ![Screen Shot 2022-09-14 at 2.07.46 PM](/assets/Screen Shot 2022-09-14 at 2.07.46 PM.png)
 
 2. 通过终端连接监控程序
 
-   ![Screen Shot 2022-09-14 at 2.08.16 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.08.16 PM.png)
+   ![Screen Shot 2022-09-14 at 2.08.16 PM](/assets/Screen Shot 2022-09-14 at 2.08.16 PM.png)
 
 Term 中几个命令的使用方法（以下对每个命令的介绍均来自`supervisor-rv/`文件夹中的`README.md`文件）：
 
 1. `R`：按照 x1 至 x31 的顺序返回用户程序寄存器值。
 
-   ![Screen Shot 2022-09-14 at 2.11.48 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.11.48 PM.png)
+   ![Screen Shot 2022-09-14 at 2.11.48 PM](/assets/Screen Shot 2022-09-14 at 2.11.48 PM.png)
 
 2. `D`：显示从指定地址开始的一段内存区域中的数据。
 
-   ![Screen Shot 2022-09-14 at 2.12.15 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.12.15 PM.png)
+   ![Screen Shot 2022-09-14 at 2.12.15 PM](/assets/Screen Shot 2022-09-14 at 2.12.15 PM.png)
 
 3. `A`：用户输入汇编指令，并放置到指定地址上
 
-   ![Screen Shot 2022-09-14 at 2.14.14 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.14.14 PM.png)
+   ![Screen Shot 2022-09-14 at 2.14.14 PM](/assets/Screen Shot 2022-09-14 at 2.14.14 PM.png)
 
 4. `F`：从文件读入汇编指令并放置到指定地址上，格式与 A 命令相同。
 
-   ![Screen Shot 2022-09-14 at 2.16.40 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.16.40 PM.png)
+   ![Screen Shot 2022-09-14 at 2.16.40 PM](/assets/Screen Shot 2022-09-14 at 2.16.40 PM.png)
 
 5. `U`：从指定地址读取一定长度的数据，并显示反汇编结果。
 
-   ![Screen Shot 2022-09-14 at 2.17.30 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.17.30 PM.png)
+   ![Screen Shot 2022-09-14 at 2.17.30 PM](/assets/Screen Shot 2022-09-14 at 2.17.30 PM.png)
 
 6. `G`：执行指定地址的用户程序。
 
-   ![Screen Shot 2022-09-14 at 2.17.54 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.17.54 PM.png)
+   ![Screen Shot 2022-09-14 at 2.17.54 PM](/assets/Screen Shot 2022-09-14 at 2.17.54 PM.png)
 
 7. `T`：查看页表内容，仅在启用页表时有效。
 
-   ![Screen Shot 2022-09-14 at 2.18.30 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.18.30 PM.png)
+   ![Screen Shot 2022-09-14 at 2.18.30 PM](/assets/Screen Shot 2022-09-14 at 2.18.30 PM.png)
 
    加上flag`EN_PAGING=y`来启动监控程序，以启用页表（以下是部分页表内容截图）：
 
-   ![Screen Shot 2022-09-15 at 10.19.30 AM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-15 at 10.19.30 AM.png)
+   ![Screen Shot 2022-09-15 at 10.19.30 AM](/assets/Screen Shot 2022-09-15 at 10.19.30 AM.png)
 
-   ![Screen Shot 2022-09-15 at 10.18.38 AM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-15 at 10.18.38 AM.png)
+   ![Screen Shot 2022-09-15 at 10.18.38 AM](/assets/Screen Shot 2022-09-15 at 10.18.38 AM.png)
 
 8. `Q`：退出 Term。
 
-   ![Screen Shot 2022-09-14 at 2.19.51 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 2.19.51 PM.png)
+   ![Screen Shot 2022-09-14 at 2.19.51 PM](/assets/Screen Shot 2022-09-14 at 2.19.51 PM.png)
 
 ### 实验2：求前10个Fibonacci数
 
@@ -103,7 +103,7 @@ loop:
 
 在`supervisor-rv/kernel/`目录下执行`make sim`启动监控程序，并在`supervisor-rv/term/`目录下执行`python3 term.py -t 127.0.0.1:6666`通过终端连接监控程序，并用`>> F`命令在监控程序中运行以上代码；通过`>> D`命令查看内存地址`0x80400000~0x80400024`，结果如下：
 
-![Screen Shot 2022-09-14 at 11.32.32 AM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 11.32.32 AM.png)
+![Screen Shot 2022-09-14 at 11.32.32 AM](/assets/Screen Shot 2022-09-14 at 11.32.32 AM.png)
 
 验证了存入起始地址为`0x80400000`的10个字中的数（16进制），与前10个Fibonacci数$1, 1, 2, 3, 5, 8, 13, 21, 34, 55$（十进制）一一对应，结果正确。
 
@@ -209,7 +209,7 @@ loop:
 
 同样启动监控程序，并通过终端连接监控程序，在监控程序中运行以上代码（方法与实验2、3均一致，此处省略），得到结果：
 
-![Screen Shot 2022-09-14 at 1.03.52 PM](实验1：汇编语言与监控程序.assets/Screen Shot 2022-09-14 at 1.03.52 PM.png)
+![Screen Shot 2022-09-14 at 1.03.52 PM](/assets/Screen Shot 2022-09-14 at 1.03.52 PM.png)
 
 存入内存的结果`0x1686c8312d0`（十六进制）与第60个Fib数1548008755920（十进制）相同，结果正确。
 
@@ -247,54 +247,6 @@ loop:
 ```
 
 核心代码均在`kern/`文件夹中，其中涉及到本次实验基础版本Kernel的文件为 `evec.S` 、 `init.S` 、 `shell.S` 、 `utils.S` 这4个文件。程序的结构大致为：
-
-```mermaid
-graph TD
-
-		subgraph evec.S
-				subgraph INITLOCATE
-						A[Kernel入口, 跳转到init.S: START]
-				end
-		end
-		A --> C
-		subgraph init.S
-				subgraph START
-            C[清空BSS段, 设置内核栈+用户栈+用户态程序sp和fp寄存器] --> D[配置串口等]
-            D --> D1[配置中断帧]
-				end
-				subgraph WELCOME
-						D1 --> D2[装入启动信息并打印]
-						D3[跳转到shell.S: SHELL, 开始交互]
-						
-				end
-		end
-		
-		D3 --> E
-		
-		subgraph shell.S
-				subgraph SHELL
-						E --> F
-				end
-		end
-		
-		
-		subgraph utils.S
-				subgraph WRITE_SERIAL_STRING
-						D2 --> H[WRITE_SERIAL_STRING]
-						H --> D3
-				end
-				
-				subgraph WRITE_SERIAL
-				end
-				
-				subgraph READ_SERIAL
-				end
-		end
-		
-		
-		
-		
-```
 
 evec.S
 
