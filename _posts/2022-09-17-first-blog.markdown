@@ -2,7 +2,12 @@
 layout: post
 title:  "首条博客：网站创建成功~"
 date:   2022-09-17 20:54:07 +0800
-categories: nothing
+categories: [posts, nothing]
+tags: [blog]
+author: hanna0911
+toc: true
+comments: true
+pin: true
 ---
 并没有什么内容的博客哈哈，贴一下老师的[作业要求](https://book.ncrnalab.org/teaching/getting-started)吧！
 

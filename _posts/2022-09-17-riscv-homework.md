@@ -2,7 +2,14 @@
 layout: post
 title:  "计组实验1：汇编语言与监控程序"
 date:   2022-09-17 22:04:07 +0800
-categories: computer-science
+categories: [posts, computer-science]
+tags: [blog]
+author: hanna0911
+toc: true
+comments: true
+math: true
+mermaid: true
+pin: true
 ---
 
 ## 实验报告
@@ -223,7 +230,7 @@ loop:
 
 监控程序Kernel的代码在`supervisor-rv/kernal/`文件夹中：
 
-```
+```bash
 .
 ├── Makefile（编译规则）
 ├── debug（调试指令）
@@ -247,6 +254,54 @@ loop:
 ```
 
 核心代码均在`kern/`文件夹中，其中涉及到本次实验基础版本Kernel的文件为 `evec.S` 、 `init.S` 、 `shell.S` 、 `utils.S` 这4个文件。程序的结构大致为：
+
+```mermaid
+graph TD
+
+		subgraph evec.S
+				subgraph INITLOCATE
+						A[Kernel入口, 跳转到init.S: START]
+				end
+		end
+		A --> C
+		subgraph init.S
+				subgraph START
+            C[清空BSS段, 设置内核栈+用户栈+用户态程序sp和fp寄存器] --> D[配置串口等]
+            D --> D1[配置中断帧]
+				end
+				subgraph WELCOME
+						D1 --> D2[装入启动信息并打印]
+						D3[跳转到shell.S: SHELL, 开始交互]
+						
+				end
+		end
+		
+		D3 --> E
+		
+		subgraph shell.S
+				subgraph SHELL
+						E --> F
+				end
+		end
+		
+		
+		subgraph utils.S
+				subgraph WRITE_SERIAL_STRING
+						D2 --> H[WRITE_SERIAL_STRING]
+						H --> D3
+				end
+				
+				subgraph WRITE_SERIAL
+				end
+				
+				subgraph READ_SERIAL
+				end
+		end
+		
+		
+		
+		
+```
 
 evec.S
 
