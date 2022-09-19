@@ -542,7 +542,7 @@ Kernel和Term通过串口进行交互，即用户在Term中输入的命令、代
 
 在Term中交互主要的代码块在`term.py`文件里`class tcp_wrapper`中定义的`write`函数与`read`函数，函数实现是基于Python的stdlib库中`socket`模块的`send`、`recv`函数。虽然不确定`socket`模块的`send`、`recv`函数具体是如何实现的，但根据Kernel在`utils.S`中的读 `READ_SERIAL` /写 `WRITE_SERIAL` 函数每次只读取/写入`0x10000000`地址8位数据，推测Term中调用的`socket`模块的`send`、`recv`函数也需要判断检验位后每次向串口地址`0x10000000`读/写8位数据。
 
-# 思考题目
+## 思考题目
 
 1. **比较 RISC-V 指令寻址方法与 x86 指令寻址方法的异同。**
 
