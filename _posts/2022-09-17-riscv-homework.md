@@ -368,7 +368,7 @@ graph TD
 						OP_G2 --> OP_G3[写开始计时信号SIG_TIMERSET到串口, 通知Term开始运行]
 						OP_G4[定位用户空间寄存器备份地址] --> OP_G5[恢复用户程序调用前的寄存器数据]
 						OP_G5 --> OP_G6[重新获得当前监控程序栈顶指针]
-						OP_G6 --> OP_G7[写停止计时信号SIG_TIMETOKEN到串口, 通知Term结束计时, 调用WRITE_SERIAL过程与前述写SIG_TIMERSET一一致, 此处省略]
+						OP_G6 --> OP_G7[写停止计时信号SIG_TIMETOKEN到串口, 通知Term结束计时, 调用WRITE_SERIAL过程与前述写SIG_TIMERSET一致, 此处省略]
 				end
 		end
 		
