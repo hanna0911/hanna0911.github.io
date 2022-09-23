@@ -5,3 +5,6 @@ _site
 vendor
 .DS_Store
 docs
+about.markdown
+404.html
+index.markdown
