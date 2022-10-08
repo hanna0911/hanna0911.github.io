@@ -12,8 +12,6 @@ mermaid: true
 pin: true
 ---
 
-# 计组实验1：汇编语言与监控程序
-
 ## 实验报告
 
 ### 实验1：RISC-V监控程序与Term命令
