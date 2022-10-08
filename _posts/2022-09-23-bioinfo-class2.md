@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "生信 Week 2 作业"
+title:  "生信 Week 2 上机任务"
 date:   2022-09-23 14:45:25 +0800
 categories: [posts, bioinformatics]
 tags: [blog]
