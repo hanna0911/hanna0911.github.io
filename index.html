@@ -1,0 +1,23 @@
+---
+layout: default
+title: Gzp的博客
+page-title: Gzp 's blog.
+home-title: Gzp的博客.
+description: 一个兴趣使然的程序员
+---
+<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+</script>
+
+<main>
+    <ul class="post-list">
+    </ul>
+</main>
