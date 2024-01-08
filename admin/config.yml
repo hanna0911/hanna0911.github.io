@@ -1,0 +1,24 @@
+backend:
+    name: github
+    repo: hanna0911/hanna0911.github.io # Path to your GitHub repository
+    branch: main # Branch to update (optional; defaults to master)
+media_folder: 'assets'
+locale: "zh_Hans"
+collections:
+  - name: 'post'
+    label: 'Posts'
+    label_singular: "Post" # Used in the UI, ie.: "New Post"
+    folder: '_posts/'
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "标题", name: "title", widget: "string", tagname: "h1"}
+      - {label: "日期", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {lable: "分类", name: "categories", widget: "list", required: false}
+      - {label: "标签", name: "tags", widget: "list", required: false}
+      - {label: "Pin", name: "pin", widget: "boolean", default: true, required: false}
+      - {label: "Toc", name: "toc", wwidget: "boolean", default: true, required: false}
+      - {label: "Comment", name: "comments", widget: "boolean", default: true, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
