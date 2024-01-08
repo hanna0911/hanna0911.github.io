@@ -3,6 +3,7 @@ backend:
     repo: hanna0911/hanna0911.github.io # Path to your GitHub repository
     branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets'
+locale: "zh_Hans"
 collections:
   - name: 'post'
     label: 'Posts'
@@ -13,11 +14,11 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "SubTitle", name: "subtitle", widget: "string", tagname: "h2"}
-      - {label: "Cover", name: "cover", widget: "image", allow_multiple: false}
-      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-      - {label: "Top", name: "top", widget: "boolean", default: false}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Color", name: "color", widget: "string"}
+      - {label: "标题", name: "title", widget: "string", tagname: "h1"}
+      - {label: "日期", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {lable: "分类", name: "categories", widget: "list", required: false}
+      - {label: "标签", name: "tags", widget: "list", required: false}
+      - {label: "Pin", name: "pin", widget: "boolean", default: true, required: false}
+      - {label: "Toc", name: "toc", wwidget: "boolean", default: true, required: false}
+      - {label: "Comment", name: "comments", widget: "boolean", default: true, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
